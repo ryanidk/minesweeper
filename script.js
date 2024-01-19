@@ -154,12 +154,12 @@ function drawBoard() {
                     ctx.fill();
 
                     ctx.strokeStyle = "red";
-                    ctx.lineWidth = 5;
+                    ctx.lineWidth = 3;
                     ctx.beginPath();
-                    ctx.moveTo(posX + 10, posY + 10)
-                    ctx.lineTo(posX + size - 10, posY + size - 10);
-                    ctx.moveTo(posX + size - 10, posY + 10);
-                    ctx.lineTo(posX + 10, posY + size - 10);
+                    ctx.moveTo(posX + 5, posY + 5)
+                    ctx.lineTo(posX + size - 5, posY + size - 5);
+                    ctx.moveTo(posX + size - 5, posY + 5);
+                    ctx.lineTo(posX + 5, posY + size - 5);
                     ctx.closePath();
                     ctx.stroke();
 
