@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <div id="game-container">
+        <div id="tooltip" class="tooltip" style="display: none;">
+    <span id="tooltip-message">Message here</span>
+    <button id="close-tooltip" class="close-tooltip">&times;</button>
+</div>
+
+        <div id="game-header">
+            <div id="difficulty-selector">
+                <button onclick="setDifficulty('easy')">Easy</button>
+                <button onclick="setDifficulty('medium')">Medium</button>
+                <button onclick="setDifficulty('hard')">Hard</button>
+            </div>
+            <div id="mine-counter">010</div>
+            <button id="reset-button">😊</button>
+            <div id="timer">000</div>
+        </div>
+        <canvas id="game-board"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
