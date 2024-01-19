@@ -304,7 +304,7 @@ function checkWinCondition() {
         }
         drawBoard();
         gameActive = false;
-        bombed = false;
+        bombed = true;
         clearInterval(timer);
         document.getElementById('reset-button').textContent = '😎';
         showTooltip(`You won in ${seconds} seconds!`);
