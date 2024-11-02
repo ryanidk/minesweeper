@@ -1,2 +1,2 @@
-# minesweeper
-minesweeper for web
+# Minesweeper
+A simple minesweeper game.
